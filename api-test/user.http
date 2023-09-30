@@ -1,0 +1,16 @@
+POST http://localhost:3001/api/v1/auth/register
+
+{
+    "name": "Hendra Irawan",
+    "email": "hendra@gmail.com", 
+    "password": "11223344"
+}
+
+
+### login user
+POST http://localhost:3001/api/v1/auth/login
+
+{ 
+    "email": "hendra@gmail.com", 
+    "password": "11223344"
+}
