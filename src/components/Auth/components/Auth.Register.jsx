@@ -1,6 +1,8 @@
 "use client";
 
-import { Input, Button } from "@nextui-org/react";
+import Image from "next/image";
+import Avatar from "@/assets/avatar.jpg";
+import { Input, Button, Link } from "@nextui-org/react";
 import { useRegister } from "../hooks/useRegister";
 
 export const AuthRegister = () => {
@@ -8,21 +10,49 @@ export const AuthRegister = () => {
     useRegister();
 
   return (
-    <main className="h-screen w-full grid grid-cols-2">
-      <div className=" bg-cyan-600 "></div>
-      <div className=" flex justify-center items-center">
-        <div className=" w-[320px] space-y-2">
-          <Input name="name" placeholder="Name" onChange={handleChange} />
-          <Input name="email" placeholder="Email" onChange={handleChange} />
+    <main className="h-screen flex justify-center items-center backgroundStyle ">
+      <div className="flex flex-col justify-center items-center">
+        <Image className="rounded-full" src={Avatar} width={50} height={50} />
+        <div class="text-2xl font-bold pb-10">hendrairwn</div>
+
+        <div className=" bg-white px-16 pt-6 pb-8 rounded-3xl w-[420px] space-y-6">
+          <h1 className=" text-2xl font-semibold text-center pb-4">
+            Login Form
+          </h1>
           <Input
-            name="password"
-            placeholder="Password"
-            type="password"
+            type="name"
+            label="Name"
+            name="name"
+            placeholder="Name"
             onChange={handleChange}
           />
-          <Button isLoading={loading} onClick={handleSubmitRegister}>
+          <Input
+            type="email"
+            label="Email"
+            name="email"
+            placeholder="Enter your email"
+            onChange={handleChange}
+          />
+
+          <Input
+            type="password"
+            label="Password"
+            name="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          <Button
+            className=" w-full"
+            color="primary"
+            isLoading={loading}
+            onClick={handleSubmitRegister}
+          >
             Register
           </Button>
+          <div className=" flex justify-center items-center pt-8 gap-2">
+            <h3>have an Account?</h3>
+            <Link href="./">Login</Link>
+          </div>
         </div>
       </div>
     </main>

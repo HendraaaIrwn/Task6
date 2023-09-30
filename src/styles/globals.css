@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .backgroundStyle {
+    @apply bg-gradient-to-r from-cyan-500 to-fuchsia-500;
+  }
+}
