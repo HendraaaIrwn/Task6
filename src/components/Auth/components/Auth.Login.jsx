@@ -12,11 +12,19 @@ export const AuthLogin = () => {
   return (
     <main className="h-screen flex justify-center items-center backgroundStyle ">
       <div className="flex flex-col justify-center items-center">
-        <Image className="rounded-full" src={Avatar} width={50} height={50} />
-        <div class="text-2xl font-bold pb-10">hendrairwn</div>
-
         <div className=" bg-white px-16 pt-6 pb-8 rounded-3xl w-[420px] space-y-6">
-          <h1 className=" text-2xl font-semibold text-center pb-4">
+          <div className=" flex flex-col justify-center items-center rounded-xl ">
+            <Image
+              className="rounded-full"
+              src={Avatar}
+              width={50}
+              height={50}
+            />
+            <div class="text-2xl font-bold tracking-tight bg-gradient-to-r from-rose-500 to-yellow-500 text-transparent bg-clip-text">
+              hendrairwn
+            </div>
+          </div>
+          <h1 className=" text-2xl font-semibold text-center pb-2">
             Login Form
           </h1>
           <Input
