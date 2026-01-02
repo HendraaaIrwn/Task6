@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "task6",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,21 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.1.13",
-    "@prisma/client": "^5.3.1",
-    "bcrypt": "^5.1.1",
-    "framer-motion": "^10.16.4",
-    "jose": "^4.14.6",
-    "jsonwebtoken": "^9.0.2",
-    "next": "latest",
-    "prisma": "^5.3.1",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-hot-toast": "^2.4.1"
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "@nextui-org/react": "2.4.6",
+    "@prisma/client": "6.3.0",
+    "framer-motion": "11.17.3",
+    "jose": "5.7.1",
+    "jsonwebtoken": "9.1.2",
+    "bcrypt": "5.1.1",
+    "react-hot-toast": "2.4.1"
   },
   "devDependencies": {
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest"
+    "prisma": "6.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "4.1.17",
+    "typescript": "^5.7.3",
+    "@types/node": "^20.13.0",
+    "@types/react": "^19.0.0"
   }
 }
